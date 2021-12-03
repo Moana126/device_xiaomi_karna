@@ -134,6 +134,7 @@ include $(LOCAL_PATH)/props/device_prop.mk
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
@@ -149,7 +150,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@1.0.vendor \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor    
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.3.vendor
 
 PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
