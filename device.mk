@@ -10,13 +10,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Inherit the proprietary setup
+# lawnchair
+$(call inherit-product, vendor/lawnchair/lawnchair.mk )
+
+# Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Disable APEX compression
-# Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
 
 # Audio
