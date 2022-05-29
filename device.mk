@@ -122,6 +122,12 @@ PRODUCT_COPY_FILES += \
 # Device properties
 include $(LOCAL_PATH)/configs/props/device_prop.mk
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    DeviceSettings \
+    init.devicesettings.rc \
+    privapp-permissions-devicesettings.xml
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
