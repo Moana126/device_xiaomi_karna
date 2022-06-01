@@ -132,7 +132,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 # Device properties
-include $(LOCAL_PATH)/props/device_prop.mk
+include $(LOCAL_PATH)/configs/props/device_prop.mk
 
 # Display
 PRODUCT_PACKAGES += \
