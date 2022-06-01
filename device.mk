@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     libshim_megvii
 
 # Device properties
-include $(LOCAL_PATH)/device_prop.mk
+include $(LOCAL_PATH)/props/device_prop.mk
 
 # Display
 PRODUCT_PACKAGES += \
