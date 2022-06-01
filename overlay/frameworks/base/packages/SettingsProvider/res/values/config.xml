@@ -19,4 +19,7 @@
 <resources>
     <!-- Set bluetooth off by default -->
     <bool name="def_bluetooth_on">false</bool>
+
+    <!-- Enable UI touch haptic feedback by default -->
+    <bool name="def_haptic_feedback">true</bool>
 </resources>
